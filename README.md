@@ -1,4 +1,5 @@
 # Assignment-5 | Emergency-Hotline
+---
 
 ### Q1. What is the difference between getElementById, getElementsByClassName, and querySelector / querySelectorAll?
 
@@ -51,7 +52,7 @@ parent.appendChild(newDiv);
 ## Q3. What is Event Bubbling and how does it work?
 Event Bubbling is when an event triggered on a child element "bubbles up" through its parent elements in the DOM tree.
 ```javascript
-// If you click the button, events fire in this order:
+// When click the button, events fire in this order:
 // 1. button (target)
 // 2. div (parent) 
 // 3. body (grandparent)
@@ -64,6 +65,7 @@ Event Bubbling is when an event triggered on a child element "bubbles up" throug
 ## Q4. What is Event Delegation in JavaScript? Why is it useful?
 Event Delegation is attaching a single event listener to a parent element to handle events from its children, using event bubbling.
 ```javascript
+
 // Instead of adding listeners to each button
 document.getElementById('container').addEventListener('click', (e) => {
   if (e.target.tagName === 'BUTTON') {
@@ -86,4 +88,3 @@ Example: Prevent form submission, link navigation
 - Stops event from bubbling up to parent elements
 - Default behavior still occurs
 Example: Prevent parent click handlers from firing
-A
