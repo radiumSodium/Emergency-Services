@@ -59,7 +59,7 @@ callButtons.forEach(button => {
         let coin = parseInt(coinNumber);
 
         if (coin <= 0){
-            alert("Inefficient coin.");
+            alert("Inefficient coin. You need 20 coins to make a call.");
             
         }else{
             alert(`📞 Calling ${cardTitle} (${cardNumber})...`);
@@ -85,9 +85,6 @@ callButtons.forEach(button => {
             `;
             callHistoryContainer.prepend(historyCard);
         }
-
-        
-
         
     });
 });

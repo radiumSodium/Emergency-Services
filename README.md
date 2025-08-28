@@ -74,6 +74,13 @@ document.getElementById('container').addEventListener('click', (e) => {
 });
 ```
 
+Usefulness:
+
+- Better performance (fewer event listeners)
+- Works with dynamically added elements
+- Less memory usage
+- Easier to manage
+
 
 ## Q5. What is the difference between preventDefault() and stopPropagation() methods?
 
